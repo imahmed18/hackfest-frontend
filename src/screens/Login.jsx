@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Login.css'
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+import { Link } from 'react-router-dom';
 
 function Login() {
     const [name, setName] = useState('');
@@ -27,7 +28,9 @@ function Login() {
                 <form className="login__form">
                     <input className="input__cnic" type="text" name="cnic" placeholder="Enter your 14-digit CNIC" onChange={event => setCnic(event.target.value)} value={cnic}/>
                     <input className="input__name" type="text" name="name" placeholder="Enter your name" onChange={event => setName(event.target.value)} value={name}/>
-                    <button className="input__submit" type="submit" onClick={(e)=>handleClick(e)}>LOG IN</button>
+                    <Link to="/transfer">
+                        <button className="input__submit" type="submit" onClick={(e)=>handleClick(e)}>LOG IN</button>
+                    </Link>
                 </form>
             </div>
         </div>

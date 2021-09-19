@@ -2,15 +2,18 @@ import React, {useState} from 'react'
 import "./Transfer1.css"
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import { Dropdown, Selection } from 'react-dropdown-now';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import 'react-dropdown-now/style.css';
+import { Link } from 'react-router-dom';
 
 function Transfer1() {
-    const [name, setName] = useState('');
-    const [cnic, setCnic] = useState('');
+    const [acc, setAcc] = useState('');
+    const [amount, setAmount] = useState('');
+    const [currency, setCurrency] = useState('');
 
     const handleClick = (e)=>{
         e.preventDefault();
-        console.log(name + " " + cnic);
+        console.log(amount + " " + acc);
         
 
     }
@@ -34,14 +37,21 @@ function Transfer1() {
                 <div>
                 <form className="transfer1__form">
                     <div className="form_input1">
-                    <span className="form_label">Account Number</span>
-                    <input className="input__acc" type="text" name="cnic" placeholder="Enter the Recipient's Account Number" onChange={event => setCnic(event.target.value)} value={cnic}/>    
+                        <span className="form_label">Account Number</span>
+                        <input className="input__acc" type="text" name="cnic" placeholder="Enter the Recipient's Account Number" onChange={event => setAcc(event.target.value)} value={acc}/>    
                     </div>
                     <div className="form_input1">
-                    <span className="form_label">Amount</span>    
-                    <input className="input__amount" type="text" name="name" placeholder="Enter the Amount" onChange={event => setName(event.target.value)} value={name}/>
+                        <span className="form_label">Amount</span>    
+                        <input className="input__amount" type="text" name="name" placeholder="Enter the Amount" onChange={event => setAmount(event.target.value)} value={amount}/>
                     </div>
-                    <button className="input__submit" type="submit" onClick={(e)=>handleClick(e)}>Confirm Transaction</button>
+                    <div className="form_input2">
+                        <KeyboardArrowDownIcon/> 
+                        <span className="form_label">Currency</span>   
+                        <input className="input__amount" type="text" name="name" placeholder="" onChange={event => setCurrency(event.target.value)} value={currency}/>
+                    </div>
+                    <Link className="link_transfer" to="/transferstatus">
+                        <button className="input__submit" type="submit" onClick={(e)=>handleClick(e)}>Confirm Transaction</button>
+                    </Link>
                 </form>
             </div>
             </div>
