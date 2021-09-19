@@ -1,0 +1,80 @@
+.transferload {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../images/login_large.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+
+.transferload__row {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transferload__burger-menu {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgray;
+
+  color: white;
+  transition: background-color 0.5s ease;
+}
+.transferload__burger-menu:hover {
+  color: black;
+  background-color: white;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.transferload__title {
+  color: white;
+  margin-right: 35px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.transferload__rate {
+  margin: auto;
+  margin-top: 140px;
+  width: 50%;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+.transferload__status {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  font-size: 65px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.transferload__loading {
+  margin: auto;
+  margin-top: -45px;
+  width: 50%;
+  padding: 10px;
+  font-size: 85px;
+  text-align: center;
+  font-weight: 800;
+}
+.icon {
+  margin: auto;
+  height: 400px;
+  object-fit: contain;
+  display: grid;
+}

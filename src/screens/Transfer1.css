@@ -1,0 +1,151 @@
+.transfer1 {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../images/login_large.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+.transfer1__row {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transfer1__burger-menu {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgray;
+
+  color: white;
+  transition: background-color 0.5s ease;
+}
+.transfer1__burger-menu:hover {
+  color: black;
+  background-color: white;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.transfer1__title {
+  color: white;
+  margin-right: 35px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.transfer1__balance {
+  margin: auto;
+  margin-top: 100px;
+  width: 50%;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+.transfer1__bal {
+  margin: auto;
+  margin-top: 0px;
+  width: 50%;
+  padding: 10px;
+  font-size: 90px;
+  text-align: center;
+  font-weight: 700;
+}
+.transfer1__row {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transfer1__card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+  background-color: grey;
+  height: 50vh;
+  border-radius: 90px;
+}
+
+.transfer1__payment {
+  color: black;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 0;
+  width: 50%;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 725;
+}
+.transfer1__dropdown {
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: auto;
+  margin-top: 5px;
+  width: 50%;
+  /* border-radius: 40px; */
+}
+
+.transfer1__form {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+.input__acc {
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  margin-right: 20px;
+  box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+}
+.input__acc:focus {
+  outline: none;
+  border: none;
+}
+
+.input__amount {
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px;
+  box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+}
+.input__amount:focus {
+  outline: none;
+  border: none;
+  margin-right: 20px;
+}
+
+.input__submit {
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  padding-right: 70px;
+  padding-left: 70px;
+  background-color: #ff6600;
+  color: white;
+  font-weight: 600;
+  box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+}
