@@ -60,6 +60,24 @@
   text-align: center;
   font-weight: 700;
 }
+.transfer1__conversion {
+  margin: auto;
+  margin-top: 100px;
+  width: 50%;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+}
+.transfer1__con {
+  margin: auto;
+  margin-top: 0px;
+  padding: 10px;
+  margin-right: 35px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+}
 .transfer1__row {
   margin-top: 40px;
   display: flex;
@@ -99,9 +117,11 @@
 }
 
 .transfer1__form {
+  display: flex;
+  flex-direction: row;
   margin: auto;
-  margin-top: 20px;
-  width: 50%;
+  margin-top: 80px;
+  width: 100%;
   padding: 10px;
   font-size: 50px;
   text-align: center;
@@ -111,6 +131,7 @@
   border-radius: 50px;
   border: none;
   margin-right: 20px;
+  width: 250px;
   box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
   -webkit-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
@@ -123,6 +144,7 @@
 .input__amount {
   padding: 15px;
   border: none;
+  width: 250px;
   border-radius: 50px;
   margin-right: 20px;
   box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
@@ -148,4 +170,18 @@
   box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
   -webkit-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.54);
+}
+
+.form_input1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+}
+.form_label {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }

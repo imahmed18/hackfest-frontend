@@ -26,15 +26,21 @@ function Transfer1() {
                     <div className="transfer1__bal">$12,900</div>
                 </div>
                 <div>
-                    <div className="transfer1__balance">Live Rate</div>
-                    <div className="transfer1__bal">1 USD = 169.3 PKR</div>
+                    <div className="transfer1__conversion">Live Rate</div>
+                    <div className="transfer1__con">1 USD = 169.3 PKR</div>
                 </div>
             </div>
             <div className="transfer1__card">
                 <div>
                 <form className="transfer1__form">
-                    <input className="input__acc" type="text" name="cnic" placeholder="Enter the Recipient's Account Number" onChange={event => setCnic(event.target.value)} value={cnic}/>
+                    <div className="form_input1">
+                    <span className="form_label">Account Number</span>
+                    <input className="input__acc" type="text" name="cnic" placeholder="Enter the Recipient's Account Number" onChange={event => setCnic(event.target.value)} value={cnic}/>    
+                    </div>
+                    <div className="form_input1">
+                    <span className="form_label">Amount</span>    
                     <input className="input__amount" type="text" name="name" placeholder="Enter the Amount" onChange={event => setName(event.target.value)} value={name}/>
+                    </div>
                     <button className="input__submit" type="submit" onClick={(e)=>handleClick(e)}>Confirm Transaction</button>
                 </form>
             </div>
